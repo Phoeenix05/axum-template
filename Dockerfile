@@ -9,5 +9,6 @@ WORKDIR app
 COPY . .
 
 RUN cargo build --release
+RUN cargo install
 
-CMD ./target/release/{{crate_name}}
+CMD {{crate_name}}
